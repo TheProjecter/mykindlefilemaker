@@ -16,7 +16,8 @@ public class Main {
 	}
 	
 	public static String loadContent(String[] urls){
-		return ContentLoader.load(urls);
+		//return ContentLoader.load(urls);
+		return ContentLoader.loadAma(urls);
 	}
 	public static String generateHtmlFile(String path, String content){
 		FileUtils.write(path,content);
@@ -35,7 +36,7 @@ public class Main {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		String[] urls = getAllCLURLList();
 		String content = loadContent(urls);
-		String path = "cccx.html";//new Date().toString() + "cccx.html";
+		String path = "cccxx.html";//new Date().toString() + "cccx.html";
 		generateHtmlFile(path,content);
 		generateMobi(path,null);
 		MailUtil2.sendNovel(path, path,"xxx@free.kindle.com", "cccx.mobi");
