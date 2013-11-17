@@ -17,8 +17,8 @@ import javax.mail.internet.MimeMultipart;
 
 public class MailUtil2 {
 	private String host = "smtp.163.com"; // smtp服务器
-	private String user = "wangping198212"; // 用户名
-	private String pwd = "7946794"; // 密码
+	private String user = "xxx"; // 用户名
+	private String pwd = "xxxxx"; // 密码
 	private String from = ""; // 发件人地址
 	private String to = ""; // 收件人地址
 	private String subject = ""; // 邮件标题
@@ -155,7 +155,7 @@ public class MailUtil2 {
 	public static void main(String[] args) {
 		MailUtil2 cn = new MailUtil2();
 		// 设置发件人地址、收件人地址和邮件标题
-		cn.setAddress("wangping198212@163.com", "msnwangping@hotmail.com",
+		cn.setAddress("xxx@163.com", "xxx@hotmail.com",
 				"源代码");
 		//cn.send("我就不发文件给你了，到百度上copy");
 		cn.send("我就不发文件给你了，到百度上copy","x.html");
@@ -166,17 +166,17 @@ public class MailUtil2 {
 	public static void sendNovel(String title, String novel) {
 		MailUtil2 cn = new MailUtil2();
 		// 设置发件人地址、收件人地址和邮件标题
-		cn.setAddress("wangping198212@163.com", "msnwangping@hotmail.com",
+		cn.setAddress("xxx@163.com", "xx@hotmail.com",
 				"好的," + title);
 		cn.send(novel);
 	}
 	public static void sendNovel(String title, String novel,String email, String path) {
 		if(email == null || email.length()<1){
-			email = "msnwangping@hotmail.com";
+			email = "xxxx@hotmail.com";
 		}
 		MailUtil2 cn = new MailUtil2();
 		// 设置发件人地址、收件人地址和邮件标题
-		cn.setAddress("wangping198212@163.com", email,
+		cn.setAddress("xxxx@163.com", email,
 				"好的," + title);
 		cn.send(novel,path);
 	}
