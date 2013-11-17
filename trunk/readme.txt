@@ -29,5 +29,8 @@ second use kinlegen use the html file which we generated previously to generate 
 third send a email to user's kindle mail box and attache the .mobi file.
 fourth, get your kindle device switch on, synchronise, then you can get your articals.
 
+=============
+You can download this project and simply run the main.java file , it will generate the .mobi for you.
 
-
+the .mobi file should contain the posts of : http://www.amazon.com/forum/kindle%20publishing?_encoding=UTF8&cdForum=Fx21HB0U7MPK8XI&cdThread=Tx3SWOTFC9LQWDI
+==============
