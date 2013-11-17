@@ -38,7 +38,7 @@ public class Main {
 		String path = "cccx.html";//new Date().toString() + "cccx.html";
 		generateHtmlFile(path,content);
 		generateMobi(path,null);
-		MailUtil2.sendNovel(path, path,"wangping198212@free.kindle.com", "cccx.mobi");
+		MailUtil2.sendNovel(path, path,"xxx@free.kindle.com", "cccx.mobi");
 	}
 
 }
